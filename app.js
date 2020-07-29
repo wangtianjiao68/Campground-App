@@ -30,7 +30,9 @@ var seedDB = require("./seeds.js");// seedDB prefilled data
 //set mongoose
 const mongoose = require('mongoose');//for data
 
-mongoose.connect('mongodb://localhost:27017/yelp_camp', {
+//mongodb+srv://Tianjiao:<password>@tianjiaocluster.g6vnz.mongodb.net/<dbname>?retryWrites=true&w=majority
+ mongoose.connect('mongodb+srv://Tianjiao:682415@tianjiaocluster.g6vnz.mongodb.net/yelp_camp?retryWrites=true&w=majority', {
+//mongoose.connect('mongodb://localhost:27017/yelp_camp', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
