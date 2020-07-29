@@ -33,7 +33,8 @@ const mongoose = require('mongoose');//for data
 //mongodb+srv://Tianjiao:<password>@tianjiaocluster.g6vnz.mongodb.net/<dbname>?retryWrites=true&w=majority
  //mongoose.connect('mongodb+srv://Tianjiao:682415@tianjiaocluster.g6vnz.mongodb.net/yelp_camp?retryWrites=true&w=majority', {
 //mongoose.connect('mongodb://localhost:27017/yelp_camp', {
-mongoose.connect(process.env.DATABASEURL, {
+var url = process.env.DATABASEURL;
+mongoose.connect(url, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
